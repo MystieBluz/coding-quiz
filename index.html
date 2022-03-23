@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./reset.css">
-
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Coding Quiz</title>
+
 </head>
 
 
 <body>
     <!-- Header for High Scores and Timer -->
     <div class="container">
-        <div class="row">
-            <div class="HS" id="HS2">View High Scores</div>
-            <div class="timer">Time:</div> <span id="timer2">0</span></div>
-        </div>
+        <header>
+            <div class="row">
+                <div class="HS" id="HS2">View High Scores</div>
+                <div class="timer">Time:</div> <span id="timer2">0</span></div>
+            </div>
+        </header>
+        
     </div>
 
     <!-- Main Page -->
@@ -25,12 +29,12 @@
         <p class="lead mb-4">Try to answer the following code-related questions with the time limit. Keep in
             mind
             that incorrect answers will penalize your scoretime by ten seconds!</p>
-        <button type="button" class="btn btn-primary btn-lg" id="startQuiz">Start Quiz</button>
+        <button type="button" class="btn" id="startQuiz">Start Quiz</button>
     </div>
 
 
     <!-- Quiz Section -->
-    <div class="container" id="quiz">
+    <div class="container" id="quizSection">
         <h1 class="h1questions" id="questions"</h1>
      <div class="container" id="answers">
          <div class="row">
@@ -53,12 +57,12 @@
         <h1 class="allDone">All done!</h1>
         <p class="userFinalScore">Your Final Score: <span id="score"></span></p>
         <p class="userInitials">Enter Initials: <input type="text " id="initials"></p>
-        <button type="button" class="quizBtn" id="submitInitials">Submit</button>
+        <button type="button" class="btn" id="submitInitials">Submit</button>
     </div>
 
     <!-- Reset Quiz -->
     <div class="container" id="resetQuiz">
-    <button type="button" class="quizBtn" id="resetBtn">Start Over</button></div>
+    <button type="button" class="btn" id="resetBtn">Start Over</button></div>
     
 </body>
 </html>
