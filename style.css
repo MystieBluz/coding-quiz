@@ -11,22 +11,3 @@ body{
     background: whitesmoke;
 }
 
-.HS {
-color: purple;
-}
-
-/* Align Timer at top */
-.timer {
-display: inline-block;
-
-}
-
-.btn {
-background-color: purple;
-color: white
-}
-
-.container {
-text-align: center;
-margin-top: 45px;
-}
