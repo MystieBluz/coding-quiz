@@ -11,3 +11,29 @@ body{
     background: whitesmoke;
 }
 
+.viewHighScore {
+    text-align: left;
+}
+
+.timer {
+    text-align: right;
+    margin: -20px 15px 90px;
+}
+
+.container {
+    text-align: center;
+   
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.quizQuestions, .quizAnswers, .quizEnd, .userFinalScore, .userInitials, .btn2, .btn3 {
+    display: none;
+}
+

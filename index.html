@@ -15,15 +15,15 @@
     <!-- High Scores and Timer heading -->
     <header
             <div class="row">
-                <div class="text-left"
+                <div class="viewHighScore"
                  <a href="#" id="viewHS">View High Scores</a>
                 </div>
-                <div class="text-right">Time: <span id="timeRemain">0</span>
+                <div class="timer">Time: <span id="timeRemain">0</span>
             </div>
         </header>
 
     <!-- Start Page -->
-    <div class="text-center" id="startPage">
+    <div class="container" id="startPage">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions with the time limit. Keep in mind
         that incorrect answers will penalize your scoretime by ten seconds!</p>
@@ -32,8 +32,8 @@
 
     <!-- Quiz Section -->
     <div class="container" id="quizSection">
-        <h1 class="text-center" id="questions">Questions:</h1>
-     <div id="answers">
+        <h2 class="quizQuestions" id="questions">Questions:</h2>
+     <div class="quizAnswers" id="answers">
          <div class="row">
             <button type="button" class="btn1" id="0"></button>
          </div>
@@ -51,15 +51,15 @@
 
     <!-- Input of Initials After Quiz is Completed -->
     <div class="container" id="inputScore">
-        <h1 class="text-center">All done!</h1>
+        <h2 class="quizEnd">All done!</h2>
         <p class="userFinalScore">Your Final Score: <span id="score"></span></p>
         <p class="userInitials">Enter Initials: <input type="text " id="initials"></p>
-        <button type="button" class="btn" id="submitInitials">Submit</button>
+        <button type="button" class="btn2" id="submitInitials">Submit</button>
     </div>
 
     <!-- Reset Quiz -->
     <div class="container" id="resetQuiz">
-    <button type="button" class="btn" id="resetBtn">Start Over</button></div>
+    <button type="button" class="btn3" id="resetBtn">Start Over</button></div>
     
 </body>
 </html>
