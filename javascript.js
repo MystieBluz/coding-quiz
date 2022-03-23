@@ -24,3 +24,5 @@ var questions = [
         choices: ["a. function = myFunction()", "b. function myFunction()", "c. function:myFunction()", "d. createMyFunction()"],
         answer: "b. function myFunction()"
     }
+
+    
