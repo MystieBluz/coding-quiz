@@ -18,7 +18,7 @@ color: purple;
 /* Align Timer at top */
 .timer {
 display: inline-block;
-margin: 0px 0px 0px 955px;
+
 }
 
 .btn {
@@ -26,3 +26,7 @@ background-color: purple;
 color: white
 }
 
+.container {
+text-align: center;
+margin-top: 45px;
+}
