@@ -15,6 +15,7 @@ body{
 color: purple;
 }
 
+/* Align Timer at top */
 .timer {
 display: inline-block;
 margin: 0px 0px 0px 955px;
