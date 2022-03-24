@@ -9,23 +9,28 @@
     <title>Coding Quiz</title>
 </head>
 
-
 <body>
-    <!-- Include in JS last -->
-        <a href="HighScores.html">View Highscores</a>
-        <div id="timeRemain"
+    <!-- Link to highscores -->
+    <header>
+        <h2>View High Score</h2>
+        <!-- Div for timer -->
+        <div id="currentTime"></div>
+    </header>
+        <!-- Intro Page -->
+        <div id="questionsDiv">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.<br> Keep in mind that incorrect
+                answers
+                will penalize your score and time by ten seconds!</p>
+            <ul id="choicesUl"></ul>
+            <!-- Buttons -->
+            <button id="startTime">Start Quiz</button>
         </div>
 
-        <!-- Intro Section-->
-            <div class="container" id="questionsDiv">
-                <h1>Coding Quiz Challenge</h1>
-                <p>Try to answer the following code-related questions with the time limit. Keep in mind
-                    that incorrect answers will penalize your scoretime by ten seconds!</p>
-                <ul id="quizOptions"></ul>
-                <button id="startQuizBtn">Start Quiz</button>
-            </div>
-    
+    </div>
 
-    
+
+    <script src="./javascript.js"></script>
+
 </body>
 </html>
