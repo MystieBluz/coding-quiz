@@ -11,29 +11,94 @@ body{
     background: whitesmoke;
 }
 
-.viewHighScore {
-    text-align: left;
-}
-
-.timer {
-    text-align: right;
-    margin: -20px 15px 90px;
-}
-
-.container {
-    text-align: center;
-   
-}
-
 h1 {
-    font-size: 35px;
-}
-
-h2 {
+    text-align: center;
     font-size: 25px;
+    margin: 110px 0px 10px
 }
 
-.quizQuestions, .quizAnswers, .quizEnd, .userFinalScore, .userInitials, .btn2, .btn3 {
-    display: none;
+p {
+    text-align: center;
 }
 
+#startQuizBtn {
+    background-color: purple;
+    margin-left: 40%;
+    padding: 15px 22px;
+    font-size: 15px;
+    color: white;
+}
+#questionsDiv {
+    margin: 20px;
+}
+
+#timeRemain {
+    float: right;
+}
+
+#goBack {
+    background-color: purple;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#clear {
+    background-color: purple;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
+    text-align: center;
+}
+
+button {
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: purple;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}

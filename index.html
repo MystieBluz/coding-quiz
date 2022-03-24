@@ -7,59 +7,25 @@
     <link rel="stylesheet" type="text/css" href="./reset.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Coding Quiz</title>
-
 </head>
 
 
 <body>
-    <!-- High Scores and Timer heading -->
-    <header
-            <div class="row">
-                <div class="viewHighScore"
-                 <a href="#" id="viewHS">View High Scores</a>
-                </div>
-                <div class="timer">Time: <span id="timeRemain">0</span>
+    <!-- Include in JS last -->
+        <a href="HighScores.html">View Highscores</a>
+        <div id="timeRemain"
+        </div>
+
+        <!-- Intro Section-->
+            <div class="container" id="questionsDiv">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions with the time limit. Keep in mind
+                    that incorrect answers will penalize your scoretime by ten seconds!</p>
+                <ul id="quizOptions"></ul>
+                <button id="startQuizBtn">Start Quiz</button>
             </div>
-        </header>
+    
 
-    <!-- Start Page -->
-    <div class="container" id="startPage">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions with the time limit. Keep in mind
-        that incorrect answers will penalize your scoretime by ten seconds!</p>
-        <button type="button" class="btn" id="startQuiz">Start Quiz</button>
-    </div>
-
-    <!-- Quiz Section -->
-    <div class="container" id="quizSection">
-        <h2 class="quizQuestions" id="questions">Questions:</h2>
-     <div class="quizAnswers" id="answers">
-         <div class="row">
-            <button type="button" class="btn1" id="0"></button>
-         </div>
-         <div class="row">
-            <button type="button" class="btn1" id="1"></button>
-         </div>
-         <div class="row">
-            <button type="button" class="btn1" id="2"></button>
-         </div>
-         <div class="row">
-            <button type="button" class="btn1" id="3"></button>
-         </div>
-     </div>       
-    </div>
-
-    <!-- Input of Initials After Quiz is Completed -->
-    <div class="container" id="inputScore">
-        <h2 class="quizEnd">All done!</h2>
-        <p class="userFinalScore">Your Final Score: <span id="score"></span></p>
-        <p class="userInitials">Enter Initials: <input type="text " id="initials"></p>
-        <button type="button" class="btn2" id="submitInitials">Submit</button>
-    </div>
-
-    <!-- Reset Quiz -->
-    <div class="container" id="resetQuiz">
-    <button type="button" class="btn3" id="resetBtn">Start Over</button></div>
     
 </body>
 </html>
