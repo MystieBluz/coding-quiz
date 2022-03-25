@@ -28,7 +28,7 @@ var questions = [
 
 ];
 
-// Star Quiz Button
+// Start Quiz Button
 function startQuizBtn() {
     var counter = 65;
     setInterval(function(){
