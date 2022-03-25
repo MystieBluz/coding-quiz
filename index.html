@@ -18,12 +18,20 @@
         <span id="timer">Time:</span>
     </header>
         <!-- Intro Page -->
-        <div id="quizQuestions">
+        <div id="codeQuiz">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.<br> Keep in mind that incorrect
                 answers
                 will penalize your score and time by ten seconds!</p>
-            <ul id="quizAnswers"></ul>
+          <div id="quiz" style="display: none;">
+            <div id="quizQuestions"></div>
+            <div id="quizChoices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+        </div>
             <!-- Buttons -->
             <button type="button" class="startQuizBtn" onclick="startQuizBtn()">Start Quiz</button>
         </div>
