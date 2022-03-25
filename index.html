@@ -13,8 +13,9 @@
     <!-- Figure out how to add High Scores -->
     <header>
         <h2>View High Score</h2>
-        <!-- Timer -->
-        <div id="currentTime"></div>
+        <!-- Quiz Timer -->
+        <span id="timer">Timer:</span>
+        <span id="count">65</span>
     </header>
         <!-- Intro Page -->
         <div id="quizQuestions">
@@ -24,7 +25,7 @@
                 will penalize your score and time by ten seconds!</p>
             <ul id="quizAnswers"></ul>
             <!-- Buttons -->
-            <button id="startTime">Start Quiz</button>
+            <button type="button" class="startQuizBtn" onclick="startQuizBtn()">Start Quiz</button>
         </div>
 
     </div>

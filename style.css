@@ -12,18 +12,18 @@ body{
 }
 
 
-#startTime {
+.startQuizBtn {
     background-color: purple;
     margin: 1% 0% 0% 43%;
     padding: 5px 22px;
     font-size: 20px;
     color: white;
 }
-#questionsDiv {
+#quizQuestions {
     margin: 20px;
 }
 
-#currentTime {
+.timer {
     float: right;
     margin: -20px 30px 0px 45px;
 }
@@ -53,7 +53,3 @@ li {
     color: white;
 }
 
-#createDiv {
-    margin-top: 20px;
-    border-top: 1px solid lightgray;
-}
