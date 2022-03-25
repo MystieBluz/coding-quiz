@@ -23,9 +23,9 @@ body{
     margin: 20px;
 }
 
-.timer {
+#timer, #count {
     float: right;
-    margin: -20px 30px 0px 45px;
+    margin: -20px 20px 0px -15px;
 }
 
 
