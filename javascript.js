@@ -54,18 +54,6 @@ let questions = [
 ];
 
 
-const lastQuestion = questions.length - 1;
-
-let firstQuestion = 0;
-
-// Render Questions
-function renderQuestion() {
-    let q = questions[firstQuestion];
-
-    questions.innerHTML = "<p>"+ q.questions +"</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB
-}
 
 // Start Quiz Button
 function startQuizBtn() {
@@ -81,4 +69,20 @@ function startQuizBtn() {
         }
     }, 1000);
 };
+
+const lastQuestion = questions.length - 1;
+
+let firstQuestion = 0;
+
+// Render Questions
+function renderQuestion() {
+    let q = questions[firstQuestion];
+
+    questions.innerHTML = "<p>"+ q.question +"</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
+
 
