@@ -12,44 +12,85 @@ body{
 }
 
 
-.startQuizBtn {
-    background-color: purple;
-    margin: 1% 0% 0% 43%;
-    padding: 5px 22px;
-    font-size: 20px;
+li{
+    padding-bottom: 3px;
     color: white;
-}
-#codeQuiz {
-    margin: 20px;
-}
-
-#timer, #count {
-    float: right;
-    margin: -20px 20px 0px -15px;
+    text-shadow: 1.5px 1px 3px black;
+    list-style-type: none;
 }
 
-
-h1 {
+p{
     text-align: center;
-    font-size: 35px;
-    margin: 80px 0px 15px
+
 }
 
-h2 {
-    color: purple;
-    margin: 0px 10px;
+h1{
+    font-size: 25px;
+    margin: 10px;
 }
 
-p {
+input{
     text-align: center;
 }
 
-li {
+  button {
+    display: inline-block;
     background-color: purple;
+    border-radius: 10px;
+    border: 3px;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
     margin-top: 10px;
-    padding: 5px 15px;
-    width: 80%;
-    font-size: 18px;
-    color: white;
+  }
+
+  button:hover{
+      box-shadow: 4px 3px 6px #4450bd;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+  }
+
+#startpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#viewHS{
+    color: purple
+}
+
+#timer{
+    text-align: right;
+    margin: 0px 45px;
+}
+#quiz {
+    display: none;
+}
+
+#result {
+    display: none;
+}
+
+#gameover {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#finalScore{
+    padding-bottom: 0.5rem;
+    font-size: x-large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#endGameBtns{
+    display: none;
+}
