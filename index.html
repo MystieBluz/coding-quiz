@@ -10,22 +10,21 @@
 </head>
 
 <body>
-    <!-- Figure out how to move High Scores acroos from Timer -->
     <header>
-        <!-- Quiz Timer -->
-        <div id="viewHS">View High Scores</div>
-        <div id="timer">Time:</div>
+        <div id="viewHS" onclick="showHighscore()">View High Scores </div> 
+        <div id="timer">Time: </div>
     </header>
-        <!-- Intro Page -->
-        <div class="container">
-            <div id="startpage">
+    <!-- High Scores and Time Header -->
+    <div class="container">
+        <div id="startpage">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.<br> Keep in mind that incorrect answers will penalize your score and time by ten seconds!</p>
-                <button id="startbtn">Start Code Quiz</button>
+        <button id="startbtn">Start Quiz</button>
+        
         </div>
 
         <div id="quiz">
-                <div id="questions"><p>Questions Placeholder</p></div>
+                <div id="questions"></div>
                     <button id="a" onclick="checkAnswer('a')">A</button>
                     <button id="b" onclick="checkAnswer('b')">B</button>
                     <button id="c" onclick="checkAnswer('c')">C</button>
@@ -35,12 +34,20 @@
         <div id="gameover">
 
             <div id="finalScore"></div>
-            <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+            <input type="text" size = "40" placeholder="Enter initials" name="intials" id="initials"/>
             <button id="submitScore">Submit Score</button>
         </div>
-    
+        <div id=highscoreContainer>
+        <div id="high-scorePage">
+            <div id="highscore-header">
+                <h3>User Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id = "highscore-initials"></div>
+            <div id = "highscore-score"></div>
+        </div>
         <div id="endGameBtns">
-            <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+            <button id="playAgain" onclick="replayQuiz()">Go Back</button>
             <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
         </div>
     </div>
