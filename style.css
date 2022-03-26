@@ -58,6 +58,12 @@ input{
     margin-top: 5px;
   }
 
+  #a, #b, #c, #d {
+    display: flex;
+    width: 90%;
+      
+  }
+
   button:hover{
       box-shadow: 4px 3px 6px #4450bd;
   }
