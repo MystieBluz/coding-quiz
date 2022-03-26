@@ -170,7 +170,7 @@ function clearScore(){
 }
 
 // Allow user to Go Back to Intro Page
-function replayQuiz(){
+function goBack(){
     highscoreContainer.style.display = "none";
     quizCompleteEl.style.display = "none";
     introPageEl.style.display = "flex";
