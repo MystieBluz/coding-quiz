@@ -1,3 +1,4 @@
+// Gloabl Variables
 var quizEl = document.getElementById("quizPage");
 var resultsEl = document.getElementById("result");
 var userScoreEl = document.getElementById("userScore");
@@ -18,7 +19,7 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
-// Quiz question object
+// Quiz questions with choices and answers
 var quizQuestions = [{
     
     question: "Commonly used data types DO NOT include:",
@@ -58,15 +59,15 @@ var quizQuestions = [{
     {  
 }            
 ];
-// Other global variables
+// Gloabl Variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 65;
+var timeRemaining = 65;
 var timerInterval;
 var score = 0;
 var correct;
 
-// This function cycles through the object array containing the quiz questions to generate the questions and answers.
+// Renders questions and choices
 function generateQuizQuestion(){
     quizCompleteEl.style.display = "none";
     if (currentQuestionIndex === finalQuestionIndex){
@@ -80,7 +81,7 @@ function generateQuizQuestion(){
     buttonD.innerHTML = currentQuestion.choiceD;
 };
 
-// Start Quiz function starts the TimeRanges, hides the start button, and displays the first quiz question.
+// Starts the quiz and starts the timer -- **Figure out how to decrement time for incorrect answer by 10 seconds
 function startQuiz(){
     quizCompleteEl.style.display = "none";
     introPageEl.style.display = "none";
@@ -88,17 +89,17 @@ function startQuiz(){
 
     //Timer
     timerInterval = setInterval(function() {
-        timeLeft--;
-        quizCountdownEl.textContent = "Time left: " + timeLeft;
+        timeRemaining--;
+        quizCountdownEl.textContent = "Time left: " + timeRemaining;
     
-        if(timeLeft === 0) {
+        if(timeRemaining === 0) {
           clearInterval(timerInterval);
           showScore();
         }
       }, 1000);
     quizEl.style.display = "block";
 }
-// This function is the end page screen that displays your score after either completeing the quiz or upon timer run out
+// Quiz completed and shows user's score
 function showScore(){
     quizEl.style.display = "none"
     quizCompleteEl.style.display = "flex";
@@ -107,8 +108,7 @@ function showScore(){
     userScoreEl.innerHTML = "Your final score is " + score;
 }
 
-// On click of the submit button, we run the function highscore that saves and stringifies the array of high scores already saved in local stoage
-// as well as pushing the new user name and score into the array we are saving in local storage. Then it runs the function to show high scores.
+// Submit button section allows user to enter intials and save intials and score
 submitBtnEl.addEventListener("click", function highscore(){
     
     
@@ -136,7 +136,7 @@ submitBtnEl.addEventListener("click", function highscore(){
     
 });
 
-// This function clears the list for the high scores and generates a new high score list from local storage
+// Generates the high scores list
 function generateHighscores(){
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
@@ -151,7 +151,7 @@ function generateHighscores(){
     }
 }
 
-// This function displays the high scores page while hiding all of the other pages from 
+// View High Score Page
 function showHighscore(){
     introPageEl.style.display = "none"
     quizCompleteEl.style.display = "none";
@@ -162,24 +162,24 @@ function showHighscore(){
     generateHighscores();
 }
 
-// This function clears the local storage of the high scores as well as clearing the text from the high score board
+// Clears high score page
 function clearScore(){
     window.localStorage.clear();
     highscoreDisplayName.textContent = "";
     highscoreDisplayScore.textContent = "";
 }
 
-// This function sets all the variables back to their original values and shows the home page to enable replay of the quiz
+// Allow user to Go Back to Intro Page
 function replayQuiz(){
     highscoreContainer.style.display = "none";
     quizCompleteEl.style.display = "none";
     introPageEl.style.display = "flex";
-    timeLeft = 76;
+    timeRemaining = 65;
     score = 0;
     currentQuestionIndex = 0;
 }
 
-// This function checks the response to each answer 
+// Check the answer to determine if correct or incorrect and displays in alert message
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
 
@@ -199,5 +199,5 @@ function checkAnswer(answer){
     }
 }
 
-// This button starts the quiz!
+// Starts the quiz
 startQuizBtnEl.addEventListener("click",startQuiz);
