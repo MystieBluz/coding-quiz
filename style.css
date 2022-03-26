@@ -12,12 +12,13 @@ body{
     width: [pixel_size]px;
 }
 
-
-li #a, #b, #c, #d {
+/* Quiz question choices */
+ol li #a, #b, #c, #d {
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
+/* User's Initials and High Score Section */
 li {
     display: flex;
     padding-bottom: 3px;
