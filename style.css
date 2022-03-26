@@ -9,10 +9,12 @@
  
 body{
     background: whitesmoke;
+    width: [pixel_size]px;
 }
 
 
 li{
+    display: flex;
     padding-bottom: 3px;
     color: black;
     list-style-type: none;
