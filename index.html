@@ -12,36 +12,37 @@
 <body>
     <header>
         <div id="viewHS" onclick="showHighscore()">View High Scores </div> 
-        <div id="timer">Time: </div>
+        <div id="countdown">Time: </div>
     </header>
     <!-- High Scores and Time Header -->
     <div class="container">
-        <div id="startpage">
+        <div id="introPage">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.<br> Keep in mind that incorrect answers will penalize your score and time by ten seconds!</p>
-        <button id="startbtn">Start Quiz</button>
+        <button id="startQuizBtn2">Start Quiz</button>
         
         </div>
 
-        <div id="quiz">
-                <div id="questions"></div>
+        <div id="quizPage">
+                <div id="questionsPage"></div>
                     <button id="a" onclick="checkAnswer('a')">A</button>
                     <button id="b" onclick="checkAnswer('b')">B</button>
                     <button id="c" onclick="checkAnswer('c')">C</button>
                     <button id="d" onclick="checkAnswer('d')">D</button>
                 <div id="result"></div>
         </div>
-        <div id="gameover">
+        <div id="quizComplete">
 
-            <div id="finalScore"></div>
-            <input type="text" size = "40" placeholder="Enter initials" name="intials" id="initials"/>
-            <button id="submitScore">Submit Score</button>
+            <div id="userScore"></div>
+            <label for="initials">Enter Initials:</label>
+            <input type="text" size = "40" name="intials" id="initials"/>
+            <button id="submitBtn">Submit</button>
         </div>
         <div id=highscoreContainer>
         <div id="high-scorePage">
             <div id="highscore-header">
-                <h3>User Initials</h3>
-                <h3>Score</h3>
+                <h2>User Initials</h2>
+                <h2>Score</h2>
             </div>
             <div id = "highscore-initials"></div>
             <div id = "highscore-score"></div>
