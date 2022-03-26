@@ -1,12 +1,12 @@
 // Gloabl Variables
+var introPageEl = document.getElementById("introPage");
+var quizCountdownEl = document.getElementById("countdown");
 var quizEl = document.getElementById("quizPage");
 var resultsEl = document.getElementById("result");
 var userScoreEl = document.getElementById("userScore");
 var quizCompleteEl = document.getElementById("quizComplete");
 var questionsEl = document.getElementById("questionsPage");
-var quizCountdownEl = document.getElementById("countdown");
 var startQuizBtnEl = document.getElementById("startQuizBtn2");
-var introPageEl = document.getElementById("introPage");
 var highscoreContainer = document.getElementById("highscoreContainer");
 var highscoreDiv = document.getElementById("high-scorePage");
 var highscoreInputName = document.getElementById("initials");
@@ -20,7 +20,7 @@ var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
 // Quiz questions with choices and answers
-var quizQuestions = [{
+var quizQuestions = [ {
     
     question: "Commonly used data types DO NOT include:",
     choiceA: "strings",
@@ -57,8 +57,16 @@ var quizQuestions = [{
     choiceD: "Javascript",
     correctAnswer: "a"},  
     {  
-}            
-];
+    question: "What does HTML stand for?",
+    choiceA: "Cascading Style Sheet",
+    choiceB: "Hungry Tommy Made Lasagna",
+    choiceC: "Hypertext Markup Language",
+    choiceD: "Document Object Method",
+    correctAnswer: "c"},
+    {           
+    }];
+
+
 // Gloabl Variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
@@ -70,7 +78,7 @@ var correct;
 // Renders questions and choices
 function generateQuizQuestion(){
     quizCompleteEl.style.display = "none";
-    if (currentQuestionIndex === finalQuestionIndex){
+    if (currentQuestionIndex == finalQuestionIndex){
         return showScore();
     } 
     var currentQuestion = quizQuestions[currentQuestionIndex];
@@ -79,7 +87,9 @@ function generateQuizQuestion(){
     buttonB.innerHTML = currentQuestion.choiceB;
     buttonC.innerHTML = currentQuestion.choiceC;
     buttonD.innerHTML = currentQuestion.choiceD;
+
 };
+ 
 
 // Starts the quiz and starts the timer -- **Figure out how to decrement time for incorrect answer by 10 seconds
 function startQuiz(){
