@@ -62,9 +62,8 @@ var quizQuestions = [ {
     choiceB: "Hungry Tommy Made Lasagna",
     choiceC: "Hypertext Markup Language",
     choiceD: "Document Object Method",
-    correctAnswer: "c"},
-    {           
-    }];
+    correctAnswer: "c"},     
+];
 
 
 // Gloabl Variables
@@ -198,13 +197,17 @@ function checkAnswer(answer){
         alert("Correct");
         currentQuestionIndex++;
         generateQuizQuestion();
-        //display in the results div that the answer is correct.
-    }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+        
+    }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex)
+    {
+        // Decerements time when incorrect answer is chosen
+        timeRemaining = timeRemaining - 10;
         alert("Incorrect")
         currentQuestionIndex++;
         generateQuizQuestion();
-        //display in the results div that the answer is wrong.
-    }else{
+        
+    }else 
+    {
         showScore();
     }
 }
