@@ -1,4 +1,4 @@
-// Gloabl Variables
+// Variables
 var introPageEl = document.getElementById("introPage");
 var quizCountdownEl = document.getElementById("countdown");
 var quizEl = document.getElementById("quizPage");
@@ -66,7 +66,7 @@ var quizQuestions = [ {
 ];
 
 
-// Gloabl Variables
+// Variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
 var timeRemaining = 65;
