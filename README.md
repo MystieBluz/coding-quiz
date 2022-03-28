@@ -1,6 +1,6 @@
-# Coding-Quiz
+# Code Quiz
 
-## Coding Quiz Assignment
+## Code Quiz Assignment
 
 
 
