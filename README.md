@@ -7,8 +7,8 @@ My task for this assignment was to a build a timed coding quiz with multiple-cho
 I utilized html, css, javascript and git to complete this homework assignment. 
 
 You can view my GitHub and Live URL below:
-### [GitHub Link](https://github.com/mduhart82/coding-quiz) 
-### [Live URL](https://mduhart82.github.io/coding-quiz/)
+### [GitHub Link](https://github.com/MystieBluz/coding-quiz) 
+### [Live URL](https://mystiebluz.github.io/coding-quiz/)
 
 
 
